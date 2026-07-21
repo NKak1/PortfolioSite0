@@ -51,13 +51,19 @@ if (cursor) {
 
 window.addEventListener("scroll", () => {
 
-    if (window.scrollY > 30) {
+    const scroll = window.scrollY;
 
-        header.classList.add("scroll");
+    heroTitle.style.transform =
+        `translateY(${scroll * 0.2}px)`;
+
+    if (window.innerWidth >= 768) {
+
+        heroTitle.style.letterSpacing =
+            `${0.08 + scroll * 0.0008}em`;
 
     } else {
 
-        header.classList.remove("scroll");
+        heroTitle.style.letterSpacing = "0.08em";
 
     }
 
