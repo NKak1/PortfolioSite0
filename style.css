@@ -296,6 +296,10 @@ header.scroll{
 
     letter-spacing:.35em;
 
+    white-space:nowrap;
+
+    flex-shrink:0;
+
 }
 
 nav{
@@ -1112,5 +1116,21 @@ footer{
     text-align:center;
 
 }
+
+}
+
+.logo{
+    white-space:nowrap;
+    flex-shrink:0;
+}
+
+
+@media (max-width:768px){
+
+    .logo{
+        font-size:14px;
+        letter-spacing:.3em;
+        transform:none;
+    }
 
 }
